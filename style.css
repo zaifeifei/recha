@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul, ol {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+/* reset end */
+
+/* Fluid img */
+img {
+  max-width: 100%;
+}
+/* Fluid img end */
+
+/* base */
+html {
+  font-size: 75%;/* 12px */
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing : antialiased;
+}
+/* base end */
+
+/* heading */
+h1 {
+  font-size: 3rem;/* 48px */
+  line-height: 1;/* 48px */
+  margin-bottom: 1.5rem;/* 24px */
+}
+h2 {
+  font-size: 2.25rem;/* 36px */
+  line-height: 1.3333;/* 48px */
+  margin-bottom: 1.5rem;/* 24px */
+}
+h3 {
+  font-size: 1.5rem;/* 24px */
+  line-height: 1;/* 24px */
+  margin-bottom: 1.5rem;/* 24px */
+}
+header h2, h4, h5, h6 {
+  font-size: 1rem;/* 16px */
+  line-height: 1.5;/* 24px */
+  margin-bottom: 1.5rem;/* 24px */
+}
+/* heading end */
+
+/* header */
+header {
+  text-align: center;
+  padding-top: 1.5rem;/* 24px */
+  background-color: #2D231E;
+}
+header h2 {
+  color: #fff;
+}
+/* header end */
+
+/* nav */
+nav {
+  margin-bottom: 1.5rem;/* 24px */
+  background-color: #2b1512;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  flex: 1;
+}
+nav ul li a {
+  display: block;
+  color: #D8C2A4;
+  padding: 0.75rem 0;
+  text-decoration: none;
+  transition: 0.6s;
+}
+nav ul li a:hover {
+  color: #D8C2A4;
+  background-color: #7d4934;
+}
+/* nav end */
+
+/* Contents */
+#contents {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+#contents p {
+  margin-bottom: 1.5rem;/* 24px */
+  text-align: left;
+}
+#contents img {
+  margin-bottom: 1.5rem;/* 24px */
+  box-shadow: 0 0 0.416rem #2F1F1F;
+}
+/* Contents end */
+
+/* footer */
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #2d231e;
+}
+/* footer end */
+
+/* 768px tablet over */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 87.5%;/* 14px */
+  }
+  #contents {
+    text-align: left;
+  }
+}
+/* 768px tablet over end */
+
+/* 1024px laptop over */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;/* 16px */
+  }
+  nav ul {
+    width: 93.75%;/* 960/1024 */
+    margin: 0 auto;
+  }
+  #contents {
+    display: flex;
+    justify-content: space-around;
+    width: 93.75%;
+  }
+  #contents main {
+    width: 64.5833333%;
+  }
+  #contents aside {
+    width: 31.25%;
+  }
+  footer {
+    width: 91.796875%;/* 940/1024 */
+    margin: 0 auto;
+  }
+}
+/* 1024px laptop over end */
